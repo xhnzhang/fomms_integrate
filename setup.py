@@ -16,7 +16,9 @@ setup(
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     license='LGPLv3',
-
+    install_requires=[
+	'numpy',
+    ],
     # Which Python importable modules should be included when your package is installed
     packages=['fomms_integrate', "fomms_integrate.tests"],
 
